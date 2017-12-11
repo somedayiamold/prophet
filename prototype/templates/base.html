@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The omniscient prophet</title>
+        <link rel="shortcut icon" href="/static/icons/favicon.ico" />
+        <link rel="stylesheet" href="/static/css/ionicons.min.css" type="text/css">
+        <link rel="stylesheet" href="/static/js/element-ui/theme-chalk/index.css" type="text/css">
+        <script type="text/javascript" src="/static/js/vue.min.js"></script>
+        <script type="text/javascript" src="/static/js/element-ui/index.js"></script>
+        {% load staticfiles %}
+        <script type="text/javascript" src="{% static "js/moment.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/axios.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/echarts.min.js" %}"></script>
+    </head>
+    <body>
+        <div id="app">
+	        {% include 'navigation.html' %}
+        </div>
+        <script type="text/javascript" src="/static/js/prototype.js"></script>
+        <link rel="stylesheet" href="/static/css/prototype.css" type="text/css">
+    </body>
+</html>

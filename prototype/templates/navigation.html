@@ -1,0 +1,72 @@
+<div class="layout">
+    <el-row type="flex">
+        <el-col :span="spanLeft" class="layout-menu">
+            <el-menu default-active="1-4-1" class="el-menu-vertical" background-color="#324057"
+      text-color="#FFFFFF" ative-text-color="#ffd04b" :collapse="collapse">
+	            <el-menu-item-group>
+                    <template slot="title">
+                        <i class="icon ion-home"></i>
+                        <span slot="title" :class="{'layout-hide-text': collapse}">
+                            {{ system }}
+                        </span>
+                    </template>
+                </el-menu-item-group>
+                <el-submenu index="1">
+                    <template slot="title">
+                        <i class="icon ion-location"></i>
+                        <span slot="title">导航一</span>
+                    </template>
+                    <el-menu-item-group>
+                        <span slot="title">分组一</span>
+                        <el-menu-item index="1-1">选项1</el-menu-item>
+                        <el-menu-item index="1-2">选项2</el-menu-item>
+                    </el-menu-item-group>
+                    <el-menu-item-group title="分组2">
+                        <el-menu-item index="1-3">选项3</el-menu-item>
+                    </el-menu-item-group>
+                    <el-submenu index="1-4">
+                        <span slot="title">选项4</span>
+                        <el-menu-item index="1-4-1">选项1</el-menu-item>
+                    </el-submenu>
+                </el-submenu>
+                <el-menu-item index="2">
+                    <i class="icon ion-grid"></i>
+                    <span slot="title">导航二</span>
+                </el-menu-item>
+                <el-menu-item index="3">
+                    <i class="icon ion-settings"></i>
+                    <span slot="title">导航三</span>
+                </el-menu-item>
+            </el-menu>
+        </el-col>
+        <el-col :span="spanRight">
+            <div class="layout-header">
+                <div class="layout-nav-button">
+                    <el-button size="large" type="text" @click="hideNavbar">
+                        <i class="icon ion-navicon-round"></i>
+                    </el-button>
+                </div>
+                <div class="layout-breadcrumb">
+                    <el-breadcrumb v-for="">
+                        <el-breadcrumb-item href="1">测试</el-breadcrumb-item>
+                        <el-breadcrumb-item href="2">测试</el-breadcrumb-item>
+                    </el-breadcrumb>
+                </div>
+                <div class="layout-ceiling">
+                    <a href="#">注册登录</a> |
+                    <a href="#/">需求反馈</a> |
+                    <a href="#">联系开发者</a> |
+                    <a href="#">
+                        帮助中心
+                    </a>
+                </div>
+            </div>
+            <div class="layout-content">
+            </div>
+            <div class="layout-footer">
+                &copy; 2017-{% now "Y" %} {{ corporation }}
+                <a href="#">{{wiki}}</a>
+            </div>
+        </el-col>
+    </el-row>
+</div>

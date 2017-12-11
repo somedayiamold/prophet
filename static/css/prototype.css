@@ -1,0 +1,68 @@
+<style>
+
+    .el-menu-vertical:not(.el-menu--collapse) {
+        width: 245px;
+        min-height: 400px;
+    }
+    .layout{
+        border: 1px solid #d7dde4;
+        background: #FFFFFF;
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    .layout-menu{
+        background: #324057;
+        border-radius: 4px;
+        margin: 1px;
+    }
+    .layout-hide-text {
+        display: none;
+    }
+    .layout-header {
+        height: 40px;
+        background: #E5E9F2;
+        margin: 1px;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    }
+    .layout-nav-button {
+        float: left;
+        margin-left: 5px;
+        margin-top: -1px; 
+    }
+    .layout-breadcrumb {
+        float: left;
+        margin: 15px;
+        color: #EFF2F7;
+    }
+    .layout-ceiling{
+        float: right;
+        color: #D3DCE6;
+        margin: 10px;
+        overflow: hidden;
+    }
+    .layout-content{
+        min-height: 700px;
+        margin: 3px;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 4px;
+    }
+    .layout-footer {
+        text-align: center;
+        padding: 10px 5px 20px;
+        color: #9ea7b4;
+    }
+    .trend-div {
+        height: 600px;
+        width: 1000px;
+    }
+    .radar-div {
+        height: 400px;
+        width: 1000px;
+    }
+    .icon {
+        font-size: 1.5em;
+    }
+</style>
