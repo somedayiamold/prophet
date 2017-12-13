@@ -15,6 +15,7 @@
         background: #324057;
         border-radius: 4px;
         margin: 1px;
+        min-width: 200px;
     }
     .layout-hide-text {
         display: none;
